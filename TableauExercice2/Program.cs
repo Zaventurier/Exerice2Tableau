@@ -41,8 +41,11 @@ namespace TableauExercice1
                     if (temp[i] == saisie)
                     {
                         tempé = true;
+                    //La variable a va servir à obtenir la position du vecteur
                     int a;
+                    //Obtention de la position du vecteur
                     a = temp[i];
+                    //Affichage de la position du vecteur
                     Console.WriteLine("Case : " + a);
                     }
 
