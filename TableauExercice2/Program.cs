@@ -41,6 +41,9 @@ namespace TableauExercice1
                     if (temp[i] == saisie)
                     {
                         tempé = true;
+                    int a;
+                    a = temp[i];
+                    Console.WriteLine("Case : " + a);
                     }
 
                 }
