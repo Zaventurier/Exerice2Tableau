@@ -11,7 +11,7 @@ namespace TableauExercice1
         static void Main(string[] args)
         {
             //k étant la variable du nbr de cases du tableau.
-            int k, sauv, saisie;
+            int k, saisie;
 
             Console.Write("Saisir le nombre de température à saisir :");
             k= int.Parse(Console.ReadLine());
@@ -33,22 +33,17 @@ namespace TableauExercice1
             saisie = int.Parse(Console.ReadLine());
             //La variable tempé va permettre de renvoyer 1 si la température est trouvé ou 0 si elle n'est pas trouvé
             bool tempé;
-            do
-            {
+
                 tempé = false;
                 //parcours du tableau
-                for (int p=0 ; p < k; p++) {
+                for (int i=0 ; i < k; i++) {
                     //comparaison
-                    if (temp[k] == saisie)//UNE ERREUR EST DETECTE ICI
+                    if (temp[i] == saisie)
                     {
                         tempé = true;
                     }
-                    else
-                    {
-                        tempé = false;
-                    }
+
                 }
-            } while (tempé = true);
 
             if (tempé == true)
             {
@@ -57,16 +52,8 @@ namespace TableauExercice1
             {
                 Console.WriteLine("La température n'existe pas !");
             }
+            Console.ReadLine();
             
-                
-            
-
-
-
-
-
-
-
 
         }
 
