@@ -43,10 +43,10 @@ namespace TableauExercice1
                         tempé = true;
                     //La variable a va servir à obtenir la position du vecteur
                     int a;
-                    //Obtention de la position du vecteur
-                    a = i;
+                    //Obtention de la position du vecteur ( on rajoute +1 pour avoir une position précise
+                    a = i + 1;
                     //Affichage de la position du vecteur
-                    Console.WriteLine("Case : " + a);
+                    Console.WriteLine("Position n°" + a);
                     }
 
                 }
