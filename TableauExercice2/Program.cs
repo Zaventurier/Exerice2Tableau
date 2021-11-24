@@ -44,7 +44,7 @@ namespace TableauExercice1
                     //La variable a va servir à obtenir la position du vecteur
                     int a;
                     //Obtention de la position du vecteur
-                    a = temp[i];
+                    a = i;
                     //Affichage de la position du vecteur
                     Console.WriteLine("Case : " + a);
                     }
