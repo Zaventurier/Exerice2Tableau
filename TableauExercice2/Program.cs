@@ -21,25 +21,28 @@ namespace TableauExercice1
 
 
             // Saisie des températures
+            int TempPosi = 0, TempNega = 0;
             for (int i = 0; i < k; i++)
             {
                 Console.Write("Saisir une température :");
                 temp[i] = int.Parse(Console.ReadLine());
+
+                if (temp[i] >= 0)
+                {
+                    TempPosi++;
+                    Console.WriteLine("Température positive enregistrée");
+                }
+                if (temp[i] < 0)
+                {
+                    TempNega++;
+                    Console.WriteLine("Température négative enregistrée");
+                }
             }
-            //Savoir le nombre de température positive et négative
-            //TempPosi pour le total des températures positive ; TempNega pour le total des températures négative
-            int TempPosi, TempNega;
-
-
-
-
-
-
-
-
-
-
-
+            
+            Console.WriteLine("Nombre de température positive(s) :" + TempPosi);
+            Console.WriteLine("Nombre de température négative(s) :" + TempNega);
+            Console.WriteLine("Appuyer sur Entrée pour passer à la recherche !");
+            Console.ReadLine();
             //Recherche de la température
             //La variable saisie sert à avoir la température à saisir pour pouvoir la comparer 
             Console.Write("Saisir une température à chercher :");
