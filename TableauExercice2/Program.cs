@@ -20,18 +20,39 @@ namespace TableauExercice1
             int[] temp = new int[k];
 
 
-            // Saisie des températures
+            // Saisie des températures + fonction de calcul du nombre de température positive ou négative
             int TempPosi = 0, TempNega = 0;
             for (int i = 0; i < k; i++)
             {
-                Console.Write("Saisir une température :");
-                temp[i] = int.Parse(Console.ReadLine());
+                //Vérification si la saisie est un entier ou non
+                bool correct = false;
+                while (!correct)
+                {
+                    try
+                    {
+                        Console.Write("Saisir une température :");
+                        temp[i] = int.Parse(Console.ReadLine());
+                        correct = true;
+                    }
+                    catch
+                    {
+                        Console.WriteLine("Erreur de saisie : saisissez un nombre entier");
+                    }
+                }
 
+                
+
+                //Fonction du calcul du nombre de température positive ou négative
+
+                //Si la valeur saisie est supérieur à 0 (donc positive)
                 if (temp[i] >= 0)
                 {
                     TempPosi++;
                     Console.WriteLine("Température positive enregistrée");
                 }
+
+                //Si la valeur saisie est supérieur à 0 (donc négative)
+
                 if (temp[i] < 0)
                 {
                     TempNega++;
@@ -47,6 +68,8 @@ namespace TableauExercice1
             //La variable saisie sert à avoir la température à saisir pour pouvoir la comparer 
             Console.Write("Saisir une température à chercher :");
             saisie = int.Parse(Console.ReadLine());
+            //Nouveau
+            Console.WriteLine("Recherche de la valeur ", saisie);
             //La variable tempé va permettre de renvoyer 1 si la température est trouvé ou 0 si elle n'est pas trouvé
             bool tempé;
 
