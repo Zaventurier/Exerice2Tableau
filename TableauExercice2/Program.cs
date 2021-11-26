@@ -67,7 +67,6 @@ namespace TableauExercice1
 
 
 
-
             //Recherche de la température
             //La variable saisie sert à avoir la température à saisir pour pouvoir la comparer 
             Console.Write("Saisir une température à chercher :");
