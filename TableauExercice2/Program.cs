@@ -64,6 +64,10 @@ namespace TableauExercice1
             Console.WriteLine("Nombre de température négative(s) :" + TempNega);
             Console.WriteLine("Appuyer sur Entrée pour passer à la recherche !");
             Console.ReadLine();
+
+
+
+
             //Recherche de la température
             //La variable saisie sert à avoir la température à saisir pour pouvoir la comparer 
             Console.Write("Saisir une température à chercher :");
