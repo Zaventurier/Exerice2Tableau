@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
+//Ceci est le nom de l'espace est sauvegardé sur mon PC ! Pensez à le changer le cas échéant !
 namespace TableauExercice1
 {
     class Program
